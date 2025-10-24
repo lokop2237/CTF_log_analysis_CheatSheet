@@ -1,1 +1,7 @@
-# CTF_log_analysis_CheatSheet
+# Log Anaylsis Process
+1. 침투 경로 파악 (취약점 분석, 접속 로그 분석)
+2. 권한 상승 파악
+3. 지속공격 탐색
+
+##
+
