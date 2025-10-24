@@ -31,4 +31,11 @@ last -f /var/log/btmp
 cat /var/log/secure* | grep Accepted | awk '{print $1, $2, $3, "\t", $9, "\t", $11, "\t", $14}' | sort | uniq
 ```
 
-3. 지속공격 탐색 (백도어, 프로세스 등)
+3. 지속공격 탐색 (백도어, 프로세스,서비스 등)
+```
+> 정상 실행중인 서비스 리스트 확인
+sudo systemctl list-units --type=service --state=running | grep -v "^\s*●"
+
+> 의심되는 서비스가 어떤건지 확인
+systemctl status [의심되는 서비스명] | head -20
+```
