@@ -19,6 +19,10 @@ last -f /var/log/btmp
 
 > 웹 접속 로그 확인 (/var/log/apache2(or nginx,etc...)
 포맷에 맞게 잘 뽑아서 보기
+
+> 원격 로그인 인증 정보 확인 (/var/log/secure)
+
+> 명령어 확인 (~/.bash_history)
 ```
 
 2. 권한 상승 파악
